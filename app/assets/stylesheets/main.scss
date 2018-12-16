@@ -90,53 +90,6 @@ body {
       background-color: #1B1E2B;
       border-radius: 8px;
 
-      .header {
-        display: flex;
-        position: relative;
-        align-items: center;
-        height: 25px;
-        width: 100%;
-        border-bottom: 1px solid #11131A;
-
-        .buttons {
-          display: flex;
-          margin-left: 15px;
-          width: 50px;
-          justify-content: space-between;
-        
-          & > * {
-            height: 12px;
-            width: 12px;
-            border-radius: 50%;
-          }
-
-          .close {
-            background-color: #EE665A;
-          }
-
-          .minimize {
-            background-color: #E1C04C;
-          }
-
-          .enlarge {
-            background-color: #46BB21;
-          }
-        }
-
-        .title {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-
-          transform: translate(-50%, -50%);
-          font-size: 14px;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          color: #757CA1;
-          font-weight: 600;
-
-        }
-      }
-
       .content {
         display: flex;
         height: 175px;
@@ -234,11 +187,92 @@ body {
   margin-top: -50px;
 
   section {
-    height: 300px;
     width: 1280px;
+    
     background-color: white;
     border-radius: 18px;
-    box-shadow: 0px 0px 20px #0000002b; 
+    box-shadow: 0px 0px 20px #0000002b;
+    font-family: 'Poppins', sans-serif;
+
+    h1 {
+      font-size: 40px;
+      margin-top: 40px;
+      margin-left: 60px;
+      margin-right: 60px;
+      font-weight: 500;
+      color: #1B1E2B;
+      text-shadow: 0px 2px 2px #0000001a;
+      border-bottom: 2px solid #D1D1D1;
+      padding-bottom: 12px;
+    }
+
+    .projectContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 60px;
+
+      .text {
+        width: 45%;
+
+        .title {
+          font-size: 25px;
+          font-weight: 500;
+          color: #1B1E2B;
+        }
+
+        p {
+          margin-top: 10px;
+          font-family: 'Hind', sans-serif;
+          color: #3E3E3E;
+          font-size: 16px;
+          line-height: 36px;
+        }
+
+        .tags {
+          display: flex;
+          height: 30px;
+          margin-top: 10px;
+
+          .tag {
+            padding: 0 10px;
+            margin-right: 15px;
+            border-radius: 15px;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #26AFFA;
+            color: white;
+            height: 100%;
+            width: fit-content;
+          }
+        }
+      }
+
+      .browserImage {
+        height: 250px;
+        background-color: #F7F7F7;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.082);
+        border-radius: 8px;
+
+        .header {
+          border-bottom: none;
+          .buttons {
+
+          }
+
+          .title {
+            color: #4D4D4D;
+          }
+        }
+
+        img {
+          height: 90%;
+          border-radius: 0 0 8px 8px;
+        }
+      }
+    }
   }
 }
 
@@ -247,4 +281,65 @@ footer {
   height: 200px;
   background-color: #1B1E2B;
   margin-top: -50px;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 25px;
+  width: 100%;
+  border-bottom: 1px solid #11131A;
+
+  .buttons {
+    display: flex;
+    margin-left: 15px;
+    width: 50px;
+    justify-content: space-between;
+  
+    & > * {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+    }
+
+    .close {
+      background-color: #EE665A;
+    }
+
+    .minimize {
+      background-color: #E1C04C;
+    }
+
+    .enlarge {
+      background-color: #46BB21;
+    }
+  }
+
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #757CA1;
+    font-weight: 600;
+
+  }
+}
+
+.projectContainer:nth-of-type(even) {
+  background-color: #383838;
+  
+  .text {
+    .title {
+      color: white !important;
+    }
+
+    p {
+      color: #E3E3E3 !important;
+    }
+  }
 }
