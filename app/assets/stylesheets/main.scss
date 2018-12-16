@@ -16,7 +16,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -40,4 +41,210 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+body {
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .box {
+    font-family: Poppins;
+    width: 500px;
+    background-color: white;
+    margin-left: 150px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 12px #00000081;
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 50px;
+
+      b {
+        font-weight: 600;
+      }
+    }
+
+    h2 {
+      color: #969696;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    .info {
+      height: 200px;
+      width: 100%;
+      background-color: #1B1E2B;
+      border-radius: 8px;
+
+      .header {
+        display: flex;
+        position: relative;
+        align-items: center;
+        height: 25px;
+        width: 100%;
+        border-bottom: 1px solid #11131A;
+
+        .buttons {
+          display: flex;
+          margin-left: 15px;
+          width: 50px;
+          justify-content: space-between;
+        
+          & > * {
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+          }
+
+          .close {
+            background-color: #EE665A;
+          }
+
+          .minimize {
+            background-color: #E1C04C;
+          }
+
+          .enlarge {
+            background-color: #46BB21;
+          }
+        }
+
+        .title {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+
+          transform: translate(-50%, -50%);
+          font-size: 14px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: #757CA1;
+          font-weight: 600;
+
+        }
+      }
+
+      .content {
+        display: flex;
+        height: 175px;
+        width: 100%;
+
+        .sidebar {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 45px;
+          height: 100%;
+          border-right: 1px solid #11131A;
+
+          p {
+            color: #3A3F58;
+            font-family: 'Menlo';
+            font-size: 14px;
+          }
+        }
+
+        .editor {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 100%;
+          padding-left: 15px;
+          color: #84D4F5;
+          font-family: 'Menlo';
+          font-size: 14px;
+
+          .tab {
+            padding-left: 20px;
+          }
+
+          .purple {
+            color: #C792EA;
+          }
+
+          .yellow {
+            color: #F7C569;
+          }
+
+          .green {
+            color: #BDE18A;
+          }
+        }
+      }
+    }
+
+    .actionButtons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 55px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+
+
+      & > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: 2px solid #147DB7;
+        box-shadow: 0px 2px 0px #147DB7;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+
+        & > i {
+          margin-right: 8px;
+        }
+      }
+
+      .resume {
+        width: 55%;
+        background-color: #26AFFA;
+        color: white;
+      }
+
+      .contact {
+        width: 40%;
+        background-color: white;
+        color: #26AFFA;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+
+  section {
+    height: 300px;
+    width: 1280px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0px 0px 20px #0000002b; 
+  }
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #1B1E2B;
+  margin-top: -50px;
 }
