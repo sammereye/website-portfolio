@@ -44,6 +44,21 @@ table {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
@@ -160,7 +175,19 @@ body {
         box-shadow: 0px 2px 0px #0040bd;
         border-radius: 10px;
         font-weight: 500;
-        cursor: pointer;
+        transition: all .2s;
+        font-family: inherit;
+        font-size: 16px;
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0px 4px 0px #0040bd;
+        }
+
+        &:active {
+          transform: translateY(2px);
+          box-shadow: 0px 0px 0px #0040bd;
+        }
 
         & > i {
           margin-right: 8px;
@@ -274,8 +301,21 @@ body {
         }
       }
     }
+
+    .skillsContainer {
+      display: flex;
+    }
   }
 }
+
+
+
+
+
+
+
+
+
 
 footer {
   width: 100%;
