@@ -52,6 +52,7 @@ body {
 .hero {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 85vh;
   background-image: url("hero.jpg");
@@ -59,27 +60,27 @@ body {
   background-position: center;
 
   .box {
-    font-family: Poppins;
-    width: 500px;
+    font-family: 'Poppins', sans-serif;
+    width: 520px;
     background-color: white;
-    margin-left: 150px;
     border-radius: 18px;
     box-shadow: 0px 4px 12px #00000081;
-    padding: 20px 30px;
+    padding: 20px 35px;
     box-sizing: border-box;
+    margin-left: -40%;
 
     h1 {
       font-size: 50px;
 
       b {
-        font-weight: 600;
+        font-weight: 500;
       }
     }
 
     h2 {
-      color: #969696;
+      color: #737373;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 500;
       margin-top: 8px;
       margin-bottom: 16px;
     }
@@ -105,8 +106,8 @@ body {
           border-right: 1px solid #11131A;
 
           p {
-            color: #3A3F58;
-            font-family: 'Menlo';
+            color: #81869e;
+            font-family: 'Roboto Mono', monospace;
             font-size: 14px;
           }
         }
@@ -119,7 +120,7 @@ body {
           height: 100%;
           padding-left: 15px;
           color: #84D4F5;
-          font-family: 'Menlo';
+          font-family: 'Roboto Mono', monospace;
           font-size: 14px;
 
           .tab {
@@ -155,10 +156,10 @@ body {
         justify-content: center;
         align-items: center;
         height: 100%;
-        border: 2px solid #147DB7;
-        box-shadow: 0px 2px 0px #147DB7;
+        border: 2px solid #0040bd;
+        box-shadow: 0px 2px 0px #0040bd;
         border-radius: 10px;
-        font-weight: 600;
+        font-weight: 500;
         cursor: pointer;
 
         & > i {
@@ -168,14 +169,14 @@ body {
 
       .resume {
         width: 55%;
-        background-color: #26AFFA;
+        background-color: #1e6bff;
         color: white;
       }
 
       .contact {
         width: 40%;
         background-color: white;
-        color: #26AFFA;
+        color: #1e6bff;
       }
     }
   }
@@ -222,7 +223,7 @@ body {
 
         p {
           margin-top: 10px;
-          font-family: 'Hind', sans-serif;
+          font-family: 'PT Sans', sans-serif;
           color: #3E3E3E;
           font-size: 16px;
           line-height: 36px;
@@ -238,11 +239,11 @@ body {
             margin-right: 15px;
             border-radius: 15px;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 500;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #26AFFA;
+            background-color: #0068ff;
             color: white;
             height: 100%;
             width: fit-content;
@@ -323,9 +324,9 @@ footer {
 
     transform: translate(-50%, -50%);
     font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #757CA1;
-    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+    color: #858db5;
+    font-weight: 500;
 
   }
 }
