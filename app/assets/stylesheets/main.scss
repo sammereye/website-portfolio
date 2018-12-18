@@ -103,11 +103,11 @@ body {
 
     .description {
       font-size: 14px;
-      margin-bottom: 12px;
-      margin-top: 6px;
+      margin-bottom: 16px;
       line-height: 26px;
       font-family: 'PT Sans', sans-serif;
-      color: rgb(27, 27, 27);
+      color: #727272;
+      font-weight: 600;
     }
 
     .info {
@@ -325,7 +325,8 @@ body {
           }
 
           .title {
-            color: #4D4D4D;
+            color: rgb(102, 102, 102);
+            font-weight: 600;
           }
         }
 
