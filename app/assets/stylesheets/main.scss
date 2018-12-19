@@ -238,6 +238,7 @@ body {
     border-radius: 18px;
     box-shadow: 0px 0px 20px #0000002b;
     font-family: 'Poppins', sans-serif;
+    z-index: 1;
 
     h2 {
       font-size: 40px;
@@ -389,6 +390,8 @@ body {
   
             b {
               font-weight: 600;
+              font-size: 15px;
+              letter-spacing: 0.5px;
             }
           }
   
@@ -503,6 +506,7 @@ body {
           font-size: 13px;
           resize: none;
           transition: all .3s;
+          font-family: 'PT Sans', sans-serif; 
 
           &:focus {
             outline: none;
