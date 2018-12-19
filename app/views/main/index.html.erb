@@ -38,9 +38,11 @@
     </div>
 
     <div class="actionButtons">
-        <button class="resume"><i class="fas fa-file-alt"></i>Check out my resume</button>
+        <button class="resume" onclick=" window.open('https://www.linkedin.com/in/sammerabu/','_blank')"><i class="fab fa-linkedin"></i>Check out my LinkedIn</button>
 
-        <button class="contact"><i class="fas fa-envelope"></i>Contact Me</button>
+        <a href="#contactForm">
+          <button href="#contactForm" class="contact"><i class="fas fa-envelope"></i>Contact Me</button>
+        </a>
       </div>
   </div>
 </div>
@@ -69,7 +71,7 @@
   
           <div class="title">sharedDriveManager</div>
         </div>
-        <img src="/assets/recist.png" alt="Screenshot of Shared Drive Manager" />
+        <img src="/assets/sharedDrive.png" alt="Screenshot of Shared Drive Manager" />
       </div>
     </div>
 
@@ -151,6 +153,35 @@
           <p><b>Databases:</b> SQL, Active Record</p>
         </div>
       </div>
+    </div>
+
+    <h2>Contact Me</h2>
+    <div class="contactContainer">
+      <div class="details">
+        <div class="emailInput">
+          <input type="email" placeholder="example@example.com">
+          <i class="far fa-envelope"></i>
+          <div class="line"></div>
+            <p>Email Address</p>
+          </input>
+        </div>
+        <div class="nameInput">
+          <input type="text" placeholder="e.g. Johnny Appleseed">
+          <i class="far fa-signature"></i>
+          <div class="line"></div>
+            <p>Full Name</p>
+          </input>
+        </div>
+      </div>
+      <div class="message">
+        <p>Message</p>
+        <textarea rows="10"></textarea>
+      </div>
+
+      <div class="submitForm">
+        <button>Send Message</button>
+      </div>
+      <a id="contactForm" name="contactForm"></a>
     </div>
   </section>
 </div>
