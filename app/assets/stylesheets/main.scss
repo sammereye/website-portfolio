@@ -434,9 +434,10 @@ body {
             margin-left: 35px;
           }
 
-          p {
+          label {
             position: absolute;
             top: 0%;
+            left: 0%;
             transform: translateY(-50%);
             margin-left: 35px;
             background-color: white;
@@ -477,9 +478,10 @@ body {
         width: 50%;
         position: relative;
 
-        p {
+        label {
           position: absolute;
           top: 0%;
+          left: 0%;
           transform: translateY(-50%);
           margin-left: 35px;
           background-color: white;
