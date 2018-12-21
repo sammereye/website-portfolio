@@ -79,10 +79,11 @@ body {
   background-image: url("hero.jpg");
   background-size: cover;
   background-position: center;
+  padding: 0 10px;
 
   .box {
     font-family: 'Poppins', sans-serif;
-    width: 520px;
+    max-width: 520px;
     background-color: white;
     border-radius: 18px;
     box-shadow: 0px 4px 12px #00000081;
@@ -252,26 +253,6 @@ body {
       padding-bottom: 12px;
     }
 
-    .aboutContainer {
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 60px;
-      margin-bottom: 60px;
-
-      p {
-        width: 55%;
-        font-family: 'PT Sans', sans-serif;
-        color: #3E3E3E;
-        font-size: 16px;
-        line-height: 40px;
-      }
-
-      img {
-        border-radius: 20px;
-        margin-right: 12.5%;
-      }
-    }
-
     .projectSection {
       margin-bottom: 40px;
 
@@ -279,6 +260,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 40px 60px;
+        flex-wrap: wrap;
 
         .text {
           width: 45%;
@@ -314,7 +296,7 @@ body {
               background-color: #0068ff;
               color: white;
               height: 100%;
-              width: fit-content;
+              min-width: fit-content;
             }
           }
         }
@@ -366,9 +348,11 @@ body {
         display: flex;
         margin: 20px 60px; 
         margin-bottom: 50px;
-  
+        flex-wrap: wrap;
+
         & > * {
           width: 50%;
+          min-width: fit-content;
         }
   
         h3 {
@@ -630,6 +614,70 @@ footer {
 
     p {
       color: #E3E3E3 !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1300px) {
+  section {
+    margin: 0px 30px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .hero {
+    .box {
+      margin-left: 0 !important;
+    }
+  }
+  
+  .projectContainer {
+    .text {
+      width: 100% !important;
+      margin-bottom: 50px;
+    }
+
+    .browserImage {
+      width: 100%;
+      height: fit-content !important;
+
+      img {
+        max-width: 100% !important;
+        max-height: none !important;
+      }
+    }
+  }
+
+  .contactContainer {
+    .details {
+      .nameInput, .emailInput {
+        width: 100% !important;
+      }
+    }
+
+    .message {
+      width: 100% !important;
+    }
+
+    .submitForm {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 873px) { 
+  .skillsContainer {
+    .frontEnd {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 580) { 
+  .hero {
+    .box {
+      margin: 0 30px;
     }
   }
 }
