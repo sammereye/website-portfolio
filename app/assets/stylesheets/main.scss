@@ -635,7 +635,7 @@ footer {
   .projectContainer {
     .text {
       width: 100% !important;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
     }
 
     .browserImage {
@@ -674,10 +674,100 @@ footer {
   }
 }
 
-@media screen and (max-width: 580) { 
+@media screen and (max-width: 580px) { 
   .hero {
     .box {
-      margin: 0 30px;
+      margin: 0 10px !important;
     }
+  }
+
+  .container {
+    margin-top: 0px;
+
+    section {
+      margin: 0;
+      border-radius: 0;
+    
+      .tags {
+        justify-content: center;
+        margin: 25px 0 !important;
+    
+        .tag {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .hero {
+    padding: 0 !important;
+    height: 100vh;
+
+    .box {
+      margin: 0 !important;
+      border-radius: 0;
+      padding: 20px 20px;
+
+      .editor {
+        padding-left: 5px !important;
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  .container {
+
+    section {
+
+      h2 {
+        margin: 30px 24px;
+        margin-bottom: 0;
+      }
+
+      .projectContainer {
+        padding: 40px 24px !important ;
+      }
+
+      .skillsContainer {
+        margin: 20px 24px !important;
+      }
+
+      .contactContainer {
+        padding: 20px 24px;
+
+        input, textarea, button {
+          width: 100% !important;
+        }
+      }
+      
+
+      .tags {
+        flex-wrap: wrap;
+      
+        .tag {
+          font-size: 12px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+} 
+
+@media screen and (max-width: 375px) {
+  .box {
+    .info {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-height: 650px) {
+  .container {
+    margin-top: 0px;
   }
 }
