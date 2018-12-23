@@ -42,7 +42,13 @@ $(document).ready(function() {
                 dataType: 'json',
                 data: {'message': message},
                 success: function(result) {
-                    alert('Message Sent');
+                    $('.messageSent').animate({top: '10px', opacity: 1}, 'slow');
+
+                    $('#userEmail, #userName, #userMessage').val('');
+
+                    setTimeout(function() {
+                        $('.messageSent').animate({top: '-50px', opacity: 0}, 'slow');
+                    }, 3000);
                 }
             });
         }
