@@ -574,16 +574,26 @@ body {
 
 
 
-
-
-
-
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 200px;
   background-color: #1B1E2B;
   margin-top: -50px;
+  font-size: 36px;
+  color: rgb(240, 242, 250);
+
+  i {
+    margin: 0 20px;
+    transform: translateY(50%);
+    cursor: pointer;
+  }
 }
+
+
+
 
 .header {
   display: flex;
