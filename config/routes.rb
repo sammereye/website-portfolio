@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'main#index'
-  match '/eft' => redirect('/eft/'). via :all
+  post 'sendMessage', to: 'main#send_message' 
 end
