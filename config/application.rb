@@ -2,7 +2,7 @@ require_relative 'boot'
 
 require 'rails/all'
 
-config.middleware.insert(0, Rack::ReverseProxy) development
+config.middleware.insert(0, Rack::ReverseProxy) do
   reverse_proxy_options preserve_host: true
   reverse_proxy '/eft', 'https://warm-shore-40425.herokuapp.com/'
 end
