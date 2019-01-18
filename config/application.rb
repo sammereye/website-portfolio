@@ -2,6 +2,11 @@ require_relative 'boot'
 
 require 'rails/all'
 
+config.middleware.insert(0, Rack::ReverseProxy) development
+  reverse_proxy_options preserve_host: true
+  reverse_proxy '/eft', 'https://warm-shore-40425.herokuapp.com/'
+end
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
