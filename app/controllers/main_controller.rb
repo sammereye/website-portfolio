@@ -3,7 +3,7 @@ class MainController < ApplicationController
         data = params[:message]
 
         ActionMailer::Base.mail(
-            from: "iamsammert@gmail.com", 
+            from: "troweway@gmail.com", 
             to: "iamsammert@gmail.com", 
             subject: data['name'], 
             body: data['email'] + ' | ' + data['message']
