@@ -6,8 +6,8 @@ Rails.application.configure do
       port: 587, 
       domain: 'gmail.com',
       authentication: 'plain', 
-      user_name: 'iamsammert@gmail.com',
-      password: 'PHHw#N!fl208y'
+      user_name: ENV['EMAIL'],
+      password: ENV['EMAIL_KEY']
   }
   # Settings specified here will take precedence over those in config/application.rb.
 
