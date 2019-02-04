@@ -2,15 +2,15 @@ class MainController < ApplicationController
     def send_message
         data = params[:message]
 
-        puts(data)
+        ActionMailer::Base.mail(
+            from: "iamsammert@gmail.com", 
+            to: "iamsammert@gmail.com", 
+            subject: data.name, 
+            body: data.email + ' | ' + data.message
+        ).deliver_now
 
-        newMessage = Message.new(email: data['email'], name: data['name'], message: data['message'])
-
-        if newMessage.valid?
-            newMessage.save
-            respond_to do |format|
-                format.json { render json: {'success': true} }
-            end
+        respond_to do |format|
+            format.json { render json: {'success': true} }
         end
     end
 end
