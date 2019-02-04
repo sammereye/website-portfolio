@@ -5,8 +5,8 @@ class MainController < ApplicationController
         ActionMailer::Base.mail(
             from: "iamsammert@gmail.com", 
             to: "iamsammert@gmail.com", 
-            subject: data.name, 
-            body: data.email + ' | ' + data.message
+            subject: data['name'], 
+            body: data['email'] + ' | ' + data['message']
         ).deliver_now
 
         respond_to do |format|
