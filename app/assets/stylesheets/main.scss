@@ -308,6 +308,22 @@ body {
               min-width: fit-content;
             }
           }
+
+          .learnMore {
+            display: flex;
+            align-items: center;
+            color: #0067ff;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            letter-spacing: .25px;
+            border-bottom: 2px solid #0067ff;
+            font-weight: 500;
+    
+            i {
+              font-size: 21px;
+              margin-left: 8px;
+            }
+          }
         }
 
         .browserImage {
@@ -721,22 +737,6 @@ footer {
     
         .tag {
           margin-right: 10px !important;
-        }
-      }
-
-      .learnMore {
-        display: flex;
-        align-items: center;
-        color: #0067ff;
-        margin-top: 20px;
-        padding-bottom: 5px;
-        letter-spacing: .25px;
-        border-bottom: 2px solid #0067ff;
-        font-weight: 500;
-
-        i {
-          font-size: 21px;
-          margin-left: 8px;
         }
       }
     }
