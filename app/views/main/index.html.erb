@@ -6,7 +6,7 @@
   <div class="box">
     <h1>Hi, i'm <b>Sammer</b>.</h1>
     
-    <p class="description">I am a senior at <span class="highlight">IUPUI</span> graduating in December of this year and am majoring in <span class="highlight">Computer Information Technology (CIT)</span>   with a focus in Web Development. I am currently learning to become a <span class="highlight">full-stack web developer</span> through my classes at IUPUI, personal projects and my current position at the IU School of Medicine.</p>
+    <p class="description">I am a senior at <span class="highlight">IUPUI</span> graduating in December of this year and am majoring in <span class="highlight">Computer Information Technology (CIT)</span>   with a focus in Web Development. I am currently a <span class="highlight">full-stack web developer</span> at the IU School of Medicine where <span class="highlight">I plan, design and develop web applications</span> that cater to the needs of the radiologists within the department.</p>
     <div class="info">
       <div class="header">
         <div class="buttons">
@@ -26,17 +26,15 @@
           <p>4</p>
           <p>5</p>
           <p>6</p>
-          <p>7</p>
         </div>
 
         <div class="editor">
-            <p><span class="purple">var</span> <span class="yellow">sammer</span></span> <span class="purple">=</span> {</p>
-            <p class="tab">'<span class="green">university</span>': '<span class="green">Purdue University</span>',</p>
-            <p class="tab">‘<span class="green">classStanding</span>’: ‘<span class="green">Senior</span>’,</p>
-            <p class="tab">‘<span class="green">graduationDate</span>’: ‘<span class="green">Fall 2019</span>’,</p>
-            <p class="tab">‘<span class="green">major</span>’: ‘<span class="green">Computer Information Tech</span>’,</p>
-            <p class="tab">‘<span class="green">currentJob</span>’: ’<span class="green">Full Stack Developer</span>’</p>
-            <p>}</p>
+            <p><span class="purple">var</span> <span class="yellow">sammer</span></span> <span class="purple">=</span> <span class="purple">new</span> <span class="yellow">Person</span>();</p>
+            <p><span class="red">sammer</span>.<span class="yellow">career</span> = '<span class="green">Full Stack Web Developer</span>';</p>
+            <p><span class="red">sammer</span>.<span class="yellow">education</span> = '<span class="green">Purdue University</span>';</p>
+            <p><span class="red">sammer</span>.<span class="yellow">work</span> = '<span class="green">IU School of Medicine</span>';</p>
+            <p><span class="red">sammer</span>.<span class="yellow">graduation</span> = '<span class="green">Fall 2019</span>';</p>
+            <p><span class="red">sammer</span>.<span class="yellow">major</span> = '<span class="green">Information Technology</span>';</p>
           </div>
       </div>
     </div>
@@ -58,15 +56,15 @@
       <div class="projectContainer">
         <div class="text">
           <h3 class="title">RECIST Calculator</h3>
-          <p>At the IU School of Medicine, their was a lack of usability while recording and watching the progression of tumors. Their current method involved inserting measured data into an excel sheet. This was <b>inefficent</b>, <b>unreliable</b> and <b>costly</b>. To fix this, I was tasked to build a web application that allowed individuals to enter in measurements and track a patient's progress over time in a simple and easy-to-use web application.</p>
+          <p>At the IU School of Medicine, there was a lack of usability and functionality while recording and watching the progression of tumors. Their current method involved inserting measured data into an excel sheet. This was <b>inefficient</b>, <b>unreliable</b> and <b>costly</b>. To fix this, I was tasked to build a web application that allowed individuals to enter in measurements and track a patient's progress over time in a simple and easy-to-use web application.</p>
           <div class="links">
             <a class="source noSource"><i class="far fa-code"></i> View Source Code
               <div class="tooltip">
-                <div class="issue">To protect patient data and ensure HIPAA-compliance, I am unable to provide source code.</div>
+                <div class="issue">To protect patient data and ensure HIPAA-compliance, I am unable to provide the source code.</div>
                 <div class="arrow"></div>
               </div>
             </a>
-            <a href="/recist" class="more">How and Why I Made It <i class="fas fa-angle-right"></i></a>
+            <a href="/recist" class="more">Demo and Why I Made It <i class="fas fa-angle-right"></i></a>
           </div>
         </div>
         <div class="browserImage">
@@ -92,7 +90,7 @@
       <div class="projectContainer">
         <div class="text">
           <h3 class="title">Shared Drive Manager</h3>
-          <p>When I first joined the IU School of Medicine as a Full Stack Developer, I was tasked to develop a web application capable of scraping the department's shared drive and implementing the data into an easy-to-use web interface. When used, users are able to output scripts capable of adding, removing and modifying Windows permissions on the shared drive.</p>
+          <p>When I first joined the IU School of Medicine as a Full Stack Developer, I was tasked to develop a web application capable of scraping the department's shared drive and implementing the data into an easy-to-use web interface. When used, users can output scripts capable of adding, removing and modifying Windows permissions on the shared drive.</p>
           <div class="links">
             <a class="source noSource"><i class="far fa-code"></i> View Source Code
               <div class="tooltip">
@@ -100,7 +98,6 @@
                 <div class="arrow"></div>
               </div>
             </a>
-            <a href="/shared" class="more">How and Why I Made It <i class="fas fa-angle-right"></i></a>
           </div>
         </div>
         <div class="browserImage">
@@ -129,7 +126,6 @@
           <p>Out of mere curiosity and to learn more about complex systems, I wanted to build an application similar to common LMS's (Learning Management Systems) applications such as Canvas™ and Blackboard™. Westriver High LMS allowed teachers, students and parents to log in and view relevant school information such as assignments, class information and grades in a neatly organized layout.</p>
           <div class="links">
             <a class="source" href="https://github.com/sammereye/westriver"><i class="far fa-code"></i> View Source Code  </a>
-            <a href="/westriver" class="more">How and Why I Made It <i class="fas fa-angle-right"></i></a>
           </div>
         </div>
         <div class="browserImage">
@@ -192,36 +188,6 @@
         </div>
       </div>
     </div>
-
-    <!--
-    <h2 id="contactForm">Contact Me</h2>
-    <div class="contactContainer">
-      <div class="details">
-        <div class="emailInput">
-          <input id="userEmail" type="email" placeholder="example@example.com">
-          <i class="far fa-envelope"></i>
-          <div class="line"></div>
-          <label for="userEmail">Email Address <span class="required emailRequired">— Required</span></label>
-          </input>
-        </div>
-        <div class="nameInput">
-          <input id="userName" type="text" placeholder="e.g. Johnny Appleseed">
-          <i class="far fa-signature"></i>
-          <div class="line"></div>
-          <label for="userName">Full Name <span class="required nameRequired">— Required</span></label>
-          </input>
-        </div>
-      </div>
-      <div class="message">
-        <label for="userMessage">Message <span class="required messageRequired">— Required</span></label>
-        <textarea id="userMessage" rows="10" placeholder="Enter your message"></textarea>
-      </div>
-
-      <div class="submitForm">
-        <button>Send Message</button>
-      </div>
-    </div>
-    -->
   </section>
 </div>
 
